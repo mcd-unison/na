@@ -1,0 +1,6 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#006644"/>
+  <circle cx="200" cy="150" r="60" fill="#fff"/>
+  <path d="M 160 220 L 160 300 Q 160 320 180 320 L 220 320 Q 240 320 240 300 L 240 220 Z" fill="#fff"/>
+  <text x="200" y="380" font-family="Arial" font-size="20" fill="#fff" text-anchor="middle">Dra. María López</text>
+</svg>
