@@ -2,5 +2,5 @@
   <rect width="400" height="400" fill="#004990"/>
   <circle cx="200" cy="150" r="60" fill="#fff"/>
   <rect x="140" y="220" width="120" height="140" rx="10" fill="#fff"/>
-  <text x="200" y="380" font-family="Arial" font-size="20" fill="#fff" text-anchor="middle">Dr. Juan Pérez</text>
+  <text x="200" y="380" font-family="Arial" font-size="18" fill="#fff" text-anchor="middle">Dr. Juan Pérez</text>
 </svg>
