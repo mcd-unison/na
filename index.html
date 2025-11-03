@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Núcleo Académico - Maestría en Ciencia de Datos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #003d7a 0%, #005eb8 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            border-bottom: 5px solid #fdb913;
+        }
+        
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .logos img {
+            height: 80px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.3em;
+            font-weight: 300;
+            opacity: 0.95;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            font-family: 'Merriweather', serif;
+            font-size: 1.5em;
+            color: #003d7a;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #fdb913;
+            font-weight: 700;
+        }
+        
+        .profesor-card {
+            background: #fafafa;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .profesor-card:hover {
+            box-shadow: 0 4px 12px rgba(0,61,122,0.15);
+            border-color: #005eb8;
+        }
+        
+        .profesor-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .profesor-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fdb913;
+            flex-shrink: 0;
+        }
+        
+        .profesor-name {
+            flex: 1;
+            font-family: 'Merriweather', serif;
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #003d7a;
+        }
+        
+        .toggle-icon {
+            font-size: 1.5em;
+            color: #005eb8;
+            transition: transform 0.3s ease;
+        }
+        
+        .profesor-card.expanded .toggle-icon {
+            transform: rotate(180deg);
+        }
+        
+        .profesor-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            margin-top: 0;
+        }
+        
+        .profesor-card.expanded .profesor-details {
+            max-height: 2000px;
+            margin-top: 20px;
+        }
+        
+        .detail-section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            border-left: 4px solid #fdb913;
+        }
+        
+        .detail-title {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            color: #003d7a;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        
+        .detail-content {
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .detail-content ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+        
+        .detail-content li {
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+            
+            header {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            h2 {
+                font-size: 1.1em;
+            }
+            
+            .profesor-photo {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .profesor-name {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logos">
+                <img src="https://mcd.unison.mx/wp-content/themes/awaken/img/logo_mcd.png" alt="Logo MCD">
+                <img src="https://mcd.unison.mx/wp-content/themes/awaken/img/logo.png" alt="Logo Universidad de Sonora">
+            </div>
+            <h1>Núcleo Académico de la Maestría en Ciencia de Datos</h1>
+            <h2>Universidad de Sonora</h2>
+        </header>
+        
+        <div class="content" id="content">
+            <!-- El contenido se generará dinámicamente -->
+        </div>
+    </div>
+
+    <script>
+        // DATOS DE LOS PROFESORES - Edita aquí la información
+        const profesores = {
+            "tiempoCompleto": [
+                {
+                    nombre: "Dr. Juan Pérez García",
+                    foto: "https://via.placeholder.com/150",
+                    formacion: "Doctorado en Ciencias de la Computación, Universidad Nacional Autónoma de México (2015). Maestría en Inteligencia Artificial, Instituto Tecnológico de Monterrey (2010).",
+                    semblanza: "Especialista en Machine Learning y Deep Learning con más de 10 años de experiencia en investigación y docencia. Ha publicado más de 30 artículos en revistas internacionales.",
+                    materias: ["Aprendizaje Automático", "Redes Neuronales Profundas", "Seminario de Investigación I"],
+                    direccion: ["Tesis: Predicción de series temporales usando LSTM (2023)", "Tesis: Clasificación de imágenes médicas (2024)"],
+                    vinculacionSocial: "Colaboración con el Sector Salud en proyectos de análisis de datos médicos. Asesoría a PyMEs en implementación de soluciones de IA.",
+                    vinculacionInter: "Colaboración con la Universidad de California en proyectos de investigación conjuntos. Miembro de la Red Mexicana de Ciencia de Datos."
+                }
+            ],
+            "investigadoresMexico": [
+                {
+                    nombre: "Dra. María Rodríguez López",
+                    foto: "https://via.placeholder.com/150",
+                    formacion: "Doctorado en Estadística Aplicada, Universidad de Barcelona (2018). Maestría en Matemáticas, UNAM (2013).",
+                    semblanza: "Investigadora especializada en análisis estadístico avanzado y modelado predictivo. Cuenta con experiencia en proyectos multidisciplinarios.",
+                    materias: ["Estadística Avanzada", "Modelos Predictivos", "Análisis Multivariado"],
+                    direccion: ["Tesis: Modelos de regresión para datos climáticos (2023)"],
+                    vinculacionSocial: "Proyectos con el Instituto Nacional de Estadística y Geografía (INEGI).",
+                    vinculacionInter: "Estancias de investigación en universidades europeas. Participación en redes internacionales de estadística."
+                }
+            ],
+            "tiempoParcialInternos": [
+                {
+                    nombre: "Mtro. Carlos Sánchez Morales",
+                    foto: "https://via.placeholder.com/150",
+                    formacion: "Maestría en Ciencia de Datos, Universidad de Sonora (2020). Ingeniería en Sistemas de Información.",
+                    semblanza: "Profesional con experiencia en el desarrollo de aplicaciones de análisis de datos y visualización.",
+                    materias: ["Visualización de Datos", "Bases de Datos Avanzadas"],
+                    direccion: ["Tesis: Dashboard interactivo para análisis empresarial (2024)"],
+                    vinculacionSocial: "Consultor en empresas locales para implementación de sistemas de Business Intelligence.",
+                    vinculacionInter: "Colaboración con departamentos de Ingeniería de la Universidad de Sonora."
+                }
+            ],
+            "tiempoParcialExternos": [
+                {
+                    nombre: "Dr. Roberto Martínez Fernández",
+                    foto: "https://via.placeholder.com/150",
+                    formacion: "Doctorado en Física Computacional, Universidad de Texas (2016). Maestría en Ciencias de la Computación.",
+                    semblanza: "Investigador senior en el Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE).",
+                    materias: ["Computación de Alto Rendimiento", "Algoritmos Paralelos"],
+                    direccion: [],
+                    vinculacionSocial: "Proyectos de simulación computacional para instituciones gubernamentales.",
+                    vinculacionInter: "Colaboraciones con laboratorios nacionales e internacionales. Proyectos conjuntos con NASA."
+                }
+            ]
+        };
+
+        const seccionesNombres = {
+            "tiempoCompleto": "Profesores de Tiempo Completo",
+            "investigadoresMexico": "Investigadores por México",
+            "tiempoParcialInternos": "Profesores de Tiempo Parcial Internos",
+            "tiempoParcialExternos": "Profesores de Tiempo Parcial Externos"
+        };
+
+        // Función para generar el HTML de un profesor
+        function generarProfesorHTML(profesor, index, seccion) {
+            const id = `${seccion}-${index}`;
+            return `
+                <div class="profesor-card" id="${id}" data-profesor="${id}">
+                    <div class="profesor-header" onclick="toggleProfesor('${id}')">
+                        <img src="${profesor.foto}" alt="${profesor.nombre}" class="profesor-photo">
+                        <div class="profesor-name">${profesor.nombre}</div>
+                        <div class="toggle-icon">▼</div>
+                    </div>
+                    <div class="profesor-details">
+                        <div class="detail-section">
+                            <div class="detail-title">Formación Académica</div>
+                            <div class="detail-content">${profesor.formacion}</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Semblanza</div>
+                            <div class="detail-content">${profesor.semblanza}</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Materias Impartidas en la MCD</div>
+                            <div class="detail-content">
+                                <ul>
+                                    ${profesor.materias.map(m => `<li>${m}</li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                        ${profesor.direccion.length > 0 ? `
+                        <div class="detail-section">
+                            <div class="detail-title">Dirección de Trabajos Terminales</div>
+                            <div class="detail-content">
+                                <ul>
+                                    ${profesor.direccion.map(d => `<li>${d}</li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                        ` : ''}
+                        <div class="detail-section">
+                            <div class="detail-title">Vinculación con Sectores Sociales y Empresariales</div>
+                            <div class="detail-content">${profesor.vinculacionSocial}</div>
+                        </div>
+                        <div class="detail-section">
+                            <div class="detail-title">Vinculación Interinstitucional</div>
+                            <div class="detail-content">${profesor.vinculacionInter}</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Función para alternar la expansión de un profesor
+        function toggleProfesor(id) {
+            const card = document.getElementById(id);
+            const wasExpanded = card.classList.contains('expanded');
+            
+            // Colapsar todos
+            document.querySelectorAll('.profesor-card').forEach(c => {
+                c.classList.remove('expanded');
+            });
+            
+            // Expandir el seleccionado si no estaba expandido
+            if (!wasExpanded) {
+                card.classList.add('expanded');
+                // Actualizar URL sin recargar
+                history.pushState(null, '', `#${id}`);
+            } else {
+                history.pushState(null, '', window.location.pathname);
+            }
+        }
+
+        // Generar el contenido
+        function generarContenido() {
+            const content = document.getElementById('content');
+            let html = '';
+            
+            for (const [seccion, profesores_lista] of Object.entries(profesores)) {
+                if (profesores_lista.length > 0) {
+                    html += `
+                        <div class="section">
+                            <div class="section-title">${seccionesNombres[seccion]}</div>
+                            ${profesores_lista.map((p, i) => generarProfesorHTML(p, i, seccion)).join('')}
+                        </div>
+                    `;
+                }
+            }
+            
+            content.innerHTML = html;
+            
+            // Verificar si hay un hash en la URL para expandir un profesor específico
+            if (window.location.hash) {
+                const id = window.location.hash.substring(1);
+                const card = document.getElementById(id);
+                if (card) {
+                    card.classList.add('expanded');
+                    setTimeout(() => {
+                        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 100);
+                }
+            }
+        }
+
+        // Inicializar
+        generarContenido();
+
+        // Manejar navegación del historial
+        window.addEventListener('popstate', () => {
+            document.querySelectorAll('.profesor-card').forEach(c => {
+                c.classList.remove('expanded');
+            });
+            
+            if (window.location.hash) {
+                const id = window.location.hash.substring(1);
+                const card = document.getElementById(id);
+                if (card) {
+                    card.classList.add('expanded');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
