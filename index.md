@@ -57,7 +57,7 @@ h1 {
 
 <div class="professor">
   <div class="professor-header">
-    <img src="assets/images/profesor1.jpg" alt="Dr. Juan Pérez" class="professor-photo">
+    <img src="assets/images/profesor1.svg" alt="Dr. Juan Pérez" class="professor-photo">
     <div>
       <h2 class="professor-name">Dr. Juan Pérez García</h2>
       <p class="professor-title">Profesor Investigador</p>
@@ -74,7 +74,7 @@ h1 {
 
 <div class="professor">
   <div class="professor-header">
-    <img src="assets/images/profesor2.jpg" alt="Dra. María López" class="professor-photo">
+    <img src="assets/images/profesor2.svg" alt="Dra. María López" class="professor-photo">
     <div>
       <h2 class="professor-name">Dra. María López Rodríguez</h2>
       <p class="professor-title">Profesora Investigadora</p>
@@ -91,7 +91,7 @@ h1 {
 
 <div class="professor">
   <div class="professor-header">
-    <img src="assets/images/profesor3.jpg" alt="Dr. Carlos Mendoza" class="professor-photo">
+    <img src="assets/images/profesor3.svg" alt="Dr. Carlos Mendoza" class="professor-photo">
     <div>
       <h2 class="professor-name">Dr. Carlos Mendoza Silva</h2>
       <p class="professor-title">Profesor Investigador</p>
@@ -108,7 +108,7 @@ h1 {
 
 <div class="professor">
   <div class="professor-header">
-    <img src="assets/images/profesor4.jpg" alt="Dra. Ana Martínez" class="professor-photo">
+    <img src="assets/images/profesor4.svg" alt="Dra. Ana Martínez" class="professor-photo">
     <div>
       <h2 class="professor-name">Dra. Ana Martínez Hernández</h2>
       <p class="professor-title">Profesora Investigadora</p>
@@ -125,7 +125,7 @@ h1 {
 
 <div class="professor">
   <div class="professor-header">
-    <img src="assets/images/profesor5.jpg" alt="Dr. Roberto Sánchez" class="professor-photo">
+    <img src="assets/images/profesor5.svg" alt="Dr. Roberto Sánchez" class="professor-photo">
     <div>
       <h2 class="professor-name">Dr. Roberto Sánchez Torres</h2>
       <p class="professor-title">Profesor Investigador</p>
