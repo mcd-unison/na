@@ -21,13 +21,13 @@
 
 {
     nombre: "Gudelia Figueroa Preciado",
-    foto: "URL de la foto",
-    formacion: "Texto sobre sus estudios",
-    semblanza: "Biografía breve",
-    materias: ["Materia 1", "Materia 2"],
-    direccion: ["Tesis 1", "Tesis 2"],
-    vinculacionSocial: "Texto sobre vinculación",
-    vinculacionInter: "Texto sobre colaboraciones"
+    foto: "https://academicos.uson.mx/cvu/gudelia-figueroa/foto",
+    formacion: "Doctorado en Ciencias (Matemáticas), Universidad de Sonora",
+    semblanza: "Profesora investigadora en el Departamento de Matemáticas de la Universidad de Sonora. Docente en los programas de Licenciatura en Matemáticas, Posgrado en Matemáticas y Posgrado en Ciencia de Datos. Colabora con el Laboratorio de Investigación y Consultoría Estadística de la Universidad de Sonora, brindando asesoría y servicios estadísticos a investigadores, oficinas gubernamentales e industria privada. Estas experiencias la han llevado a valorar la importancia de la interpretación rigurosa de resultados, la comunicación efectiva de hallazgos y el uso responsable de la información. En la docencia, procura que el aprendizaje combine fundamentos teóricos sólidos con aplicaciones reales y el uso de software especializado, de modo que los estudiantes desarrollen un pensamiento crítico y puedan aplicar sus conocimientos a problemas complejos en contextos interdisciplinarios. Miembro de la Comisión Académica del Posgrado en Matemáticas y de la Comisión Académica del Posgrado en Ciencia de Datos.",
+    materias: ["Matemáticas para Ciencia de Datos (2020 a 2022)", "Estadística para Ciencia de Datos (2021 a 2025)"],
+    direccion: ["Grecia Mendoza Aviña, Conteo Rápido a partir de PREP-Casilla (2023)", "Santiago Fransisco Robles Tamayo, Tablero interactivo para la auditoría de desempeño de la cuenta pública en Sonora (en proceso)", "Sebastian Issac Vega Robles, Prototipo de análisis de datos clínicos para apoyo al tratamiento de epilepsia (en proceso)", "José Carlos Barrera Maldonado, Desarrollo de una interfaz para el análisis en tiempo real de psicofisica y actividad cerebral en neurociencia cognitiva (en proceso), Catherine Lee Scott Luevano, Segmentación de Mercado y Optimización de Ubicaciones para Nuevos Drives (en proceso)"],
+    vinculacionSocial: "Instituto Superior de Auditoría y Fiscalización (ISAF) del Estado de Sonora, Secretaría de Salud del Estado de Sonora, Instituto Electoral Estatal, Grupo Bimbo",
+    vinculacionInter: "CIMAT"
 }
 
 {
