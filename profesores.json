@@ -4,7 +4,7 @@
     formacion: "Doctor en Física de Partículas Experimental, por la Universidad Autónoma de San Luis Potosí",
     semblanza: "Cuenta con más de 15 años de experiencia en experimentos ligados al Gran Colisionador de Hadrones (LHC) del Laboratorio Europeo de Investigación Nuclear (CERN). Durante su doctorado estuvo trabajando en el experimento ATLAS, buscando indicios de partículas exóticas y producción de micro-blackholes con los primeros datos del LHC. Después realizó una estancia postdoctoral con la Universidad Texas A&M contribuyendo en el experimento CMS del CERN, donde desarrolló estudios de simulación para el desarrollo y optimización de la nueva generación de detectores de muones (detectores GEMs) y búsqueda de materia oscura (dark photons) en un estado final con cuatro muones. En 2018 se incorpora a la Universidad de Sonora como uno de los miembros fundadores del grupo UNISON-CMS, el cual marca el inicio de la colaboración de la UNISON con el experimento CMS del CERN.  Desde ese entonces se ha involucrado en proyectos relacionados con búsqueda de nueva física e integración de algoritmos de inteligencia artificial en los procesos del experimento.",
     materias: ["Redes Neuronales profundas (2021-1, 2022-1)"],
-    direccion: ["Brenda Leyva Amaya, Deyección de anomalías en el experimento CMS del CERN con un modelo autoencoder basado en datos del PLT (2022)", "Victor Manuel Minjares Neriz, Exploración y desarrollo de herramientas para la integración de modelos de IA en los procesos del experimento CMS del CERN y  su estudio mediante ParticleNet (en proceso)", "Estephania Pivac Alcaraz,  Exploración de un modelo VAE (Variational Autoencoder) para minado de datos usando como caso de estudio datos del experimento CMS del CERN (en proceso)"],
+    direccion: ["Brenda Leyva Amaya, Detección de anomalías en el experimento CMS del CERN con un modelo autoencoder basado en datos del PLT (2022)", "Victor Manuel Minjares Neriz, Exploración y desarrollo de herramientas para la integración de modelos de IA en los procesos del experimento CMS del CERN y  su estudio mediante ParticleNet (en proceso)", "Estephania Pivac Alcaraz,  Exploración de un modelo VAE (Variational Autoencoder) para minado de datos usando como caso de estudio datos del experimento CMS del CERN (en proceso)"],
     vinculacionInter: "Centro Europeo de Investigacion Nuclear (CERN)"
 }
 
@@ -30,90 +30,3 @@
     vinculacionInter: "CIMAT"
 }
 
-{
-    nombre: "Olivia Carolina Gutú Ocampo",
-    foto: "URL de la foto",
-    formacion: "Texto sobre sus estudios",
-    semblanza: "Biografía breve",
-    materias: ["Materia 1", "Materia 2"],
-    direccion: ["Tesis 1", "Tesis 2"],
-    vinculacionSocial: "Texto sobre vinculación",
-    vinculacionInter: "Texto sobre colaboraciones"
-}
-
-{
-    nombre: "Rosalía Guadalupe Hernández Amador",
-    foto: "URL de la foto",
-    formacion: "Texto sobre sus estudios",
-    semblanza: "Biografía breve",
-    materias: ["Materia 1", "Materia 2"],
-    direccion: ["Tesis 1", "Tesis 2"],
-    vinculacionSocial: "Texto sobre vinculación",
-    vinculacionInter: "Texto sobre colaboraciones"
-}
-
-{
-    nombre: "Jesús Adolfo Minjarez Sosa",
-    foto: "URL de la foto",
-    formacion: "Texto sobre sus estudios",
-    semblanza: "Biografía breve",
-    materias: ["Materia 1", "Materia 2"],
-    direccion: ["Tesis 1", "Tesis 2"],
-    vinculacionSocial: "Texto sobre vinculación",
-    vinculacionInter: "Texto sobre colaboraciones"
-}
-
-{
-    nombre: "Carlos Manuel Minjarez Sosa",
-    foto: "URL de la foto",
-    formacion: "Texto sobre sus estudios",
-    semblanza: "Biografía breve",
-    materias: ["Materia 1", "Materia 2"],
-    direccion: ["Tesis 1", "Tesis 2"],
-    vinculacionSocial: "Texto sobre vinculación",
-    vinculacionInter: "Texto sobre colaboraciones"
-}
-
-{
-    nombre: "Gerardo Mauricio Toledo Acosta",
-    foto: "URL de la foto",
-    formacion: "Texto sobre sus estudios",
-    semblanza: "Biografía breve",
-    materias: ["Materia 1", "Materia 2"],
-    direccion: ["Tesis 1", "Tesis 2"],
-    vinculacionSocial: "Texto sobre vinculación",
-    vinculacionInter: "Texto sobre colaboraciones"
-}
-
-{
-    nombre: "Raquel Torres Peralta",
-    foto: "URL de la foto",
-    formacion: "Texto sobre sus estudios",
-    semblanza: "Biografía breve",
-    materias: ["Materia 1", "Materia 2"],
-    direccion: ["Tesis 1", "Tesis 2"],
-    vinculacionSocial: "Texto sobre vinculación",
-    vinculacionInter: "Texto sobre colaboraciones"
-}
-
-{
-    nombre: "Juan Pablo Soto Barrera",
-    foto: "URL de la foto",
-    formacion: "Texto sobre sus estudios",
-    semblanza: "Biografía breve",
-    materias: ["Materia 1", "Materia 2"],
-    direccion: ["Tesis 1", "Tesis 2"],
-    vinculacionSocial: "Texto sobre vinculación",
-    vinculacionInter: "Texto sobre colaboraciones"
-}
-
-{
-    nombre: "Julio Waissman Vilanova",
-    foto: "URL de la foto",
-    formacion: "Texto sobre sus estudios",
-    semblanza: "Biografía breve",
-    materias: ["Materia 1", "Materia 2"],
-    direccion: ["Tesis 1", "Tesis 2"],
-    vinculacionSocial: "Texto sobre vinculación",
-    vinculacionInter: "Texto sobre colaboraciones"
-}

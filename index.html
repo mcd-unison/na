@@ -308,6 +308,14 @@
             "tiempoParcialExternos": "Profesores de Tiempo Parcial Externos"
         };
 
+        // Función para verificar si un campo tiene contenido
+        function tieneContenido(valor) {
+            if (!valor) return false;
+            if (Array.isArray(valor)) return valor.length > 0;
+            if (typeof valor === 'string') return valor.trim().length > 0;
+            return true;
+        }
+
         // Función para generar el HTML de un profesor
         function generarProfesorHTML(profesor, index, seccion) {
             const id = `${seccion}-${index}`;
@@ -319,14 +327,19 @@
                         <div class="toggle-icon">▼</div>
                     </div>
                     <div class="profesor-details">
+                        ${tieneContenido(profesor.formacion) ? `
                         <div class="detail-section">
                             <div class="detail-title">Formación Académica</div>
                             <div class="detail-content">${profesor.formacion}</div>
                         </div>
+                        ` : ''}
+                        ${tieneContenido(profesor.semblanza) ? `
                         <div class="detail-section">
                             <div class="detail-title">Semblanza</div>
                             <div class="detail-content">${profesor.semblanza}</div>
                         </div>
+                        ` : ''}
+                        ${tieneContenido(profesor.materias) ? `
                         <div class="detail-section">
                             <div class="detail-title">Materias Impartidas en la MCD</div>
                             <div class="detail-content">
@@ -335,7 +348,8 @@
                                 </ul>
                             </div>
                         </div>
-                        ${profesor.direccion.length > 0 ? `
+                        ` : ''}
+                        ${tieneContenido(profesor.direccion) ? `
                         <div class="detail-section">
                             <div class="detail-title">Dirección de Trabajos Terminales</div>
                             <div class="detail-content">
@@ -345,18 +359,23 @@
                             </div>
                         </div>
                         ` : ''}
+                        ${tieneContenido(profesor.vinculacionSocial) ? `
                         <div class="detail-section">
                             <div class="detail-title">Vinculación con Sectores Sociales y Empresariales</div>
                             <div class="detail-content">${profesor.vinculacionSocial}</div>
                         </div>
+                        ` : ''}
+                        ${tieneContenido(profesor.vinculacionInter) ? `
                         <div class="detail-section">
                             <div class="detail-title">Vinculación Interinstitucional</div>
                             <div class="detail-content">${profesor.vinculacionInter}</div>
                         </div>
+                        ` : ''}
                     </div>
                 </div>
             `;
         }
+
 
         // Función para alternar la expansión de un profesor
         function toggleProfesor(id) {
