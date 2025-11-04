@@ -1,83 +1,76 @@
 {
     nombre: "Olivia Carolina Gutú Ocampo",
-    foto: "URL de la foto",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/0/03/Scientist.svg",
     formacion: "Texto sobre sus estudios",
     semblanza: "Biografía breve",
     materias: ["Materia 1", "Materia 2"],
     direccion: ["Tesis 1", "Tesis 2"],
     vinculacionSocial: "Texto sobre vinculación",
     vinculacionInter: "Texto sobre colaboraciones"
-}
-
+},
 {
     nombre: "Rosalía Guadalupe Hernández Amador",
-    foto: "URL de la foto",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/0/03/Scientist.svg",
     formacion: "Texto sobre sus estudios",
     semblanza: "Biografía breve",
     materias: ["Materia 1", "Materia 2"],
     direccion: ["Tesis 1", "Tesis 2"],
     vinculacionSocial: "Texto sobre vinculación",
     vinculacionInter: "Texto sobre colaboraciones"
-}
-
+},
 {
     nombre: "Jesús Adolfo Minjarez Sosa",
-    foto: "URL de la foto",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/0/03/Scientist.svg",
     formacion: "Texto sobre sus estudios",
     semblanza: "Biografía breve",
     materias: ["Materia 1", "Materia 2"],
     direccion: ["Tesis 1", "Tesis 2"],
     vinculacionSocial: "Texto sobre vinculación",
     vinculacionInter: "Texto sobre colaboraciones"
-}
-
+},
 {
     nombre: "Carlos Manuel Minjarez Sosa",
-    foto: "URL de la foto",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/0/03/Scientist.svg",
     formacion: "Texto sobre sus estudios",
     semblanza: "Biografía breve",
     materias: ["Materia 1", "Materia 2"],
     direccion: ["Tesis 1", "Tesis 2"],
     vinculacionSocial: "Texto sobre vinculación",
     vinculacionInter: "Texto sobre colaboraciones"
-}
-
+},
 {
     nombre: "Gerardo Mauricio Toledo Acosta",
-    foto: "URL de la foto",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/0/03/Scientist.svg",
     formacion: "Texto sobre sus estudios",
     semblanza: "Biografía breve",
     materias: ["Materia 1", "Materia 2"],
     direccion: ["Tesis 1", "Tesis 2"],
     vinculacionSocial: "Texto sobre vinculación",
     vinculacionInter: "Texto sobre colaboraciones"
-}
-
+},
 {
     nombre: "Raquel Torres Peralta",
-    foto: "URL de la foto",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/0/03/Scientist.svg",
     formacion: "Texto sobre sus estudios",
     semblanza: "Biografía breve",
     materias: ["Materia 1", "Materia 2"],
     direccion: ["Tesis 1", "Tesis 2"],
     vinculacionSocial: "Texto sobre vinculación",
     vinculacionInter: "Texto sobre colaboraciones"
-}
-
+},
 {
     nombre: "Juan Pablo Soto Barrera",
-    foto: "URL de la foto",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/0/03/Scientist.svg",
     formacion: "Texto sobre sus estudios",
     semblanza: "Biografía breve",
     materias: ["Materia 1", "Materia 2"],
     direccion: ["Tesis 1", "Tesis 2"],
     vinculacionSocial: "Texto sobre vinculación",
     vinculacionInter: "Texto sobre colaboraciones"
-}
-
+},
 {
     nombre: "Julio Waissman Vilanova",
-    foto: "URL de la foto",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/0/03/Scientist.svg",
     formacion: "Texto sobre sus estudios",
     semblanza: "Biografía breve",
     materias: ["Materia 1", "Materia 2"],
